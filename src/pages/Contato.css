@@ -1,0 +1,15 @@
+
+.contato {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.contato h1 {
+    color: #333;
+}
+
+.contato p {
+    color: #555;
+    font-size: 1.2em;
+}

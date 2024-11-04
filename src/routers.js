@@ -1,24 +1,22 @@
+// /mnt/c/Users/Yan/RoteamentoReact/src/routers.js
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Home from './pages/Home';
-import Nutricionismo from './pages/Nutricionismo';
-import JoginhoDaVelha from './pages/JogoDaVelha'; 
-import Erro from './pages/Erro';
-import Filmes from './pages/Filme';
+import Sobre from './pages/Sobre';
+import Contato from './pages/Contato';
 
 function RoutesApp() {
     return (
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path="/" element={<Home />} />    
-                <Route path="/Nutricionismo" element={<Nutricionismo />} />
-                <Route path="/Filme" element={<Filmes />} />
-                <Route path="/jogoDaVelha" element={<JoginhoDaVelha />} /> 
-                <Route path="*" element={<Erro />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/sobre" element={<Sobre />} />
+                <Route path="/contato" element={<Contato />} />
             </Routes>
         </BrowserRouter>
     );
 }
 
-export default RoutesApp; 
+export default RoutesApp;
